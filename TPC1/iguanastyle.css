@@ -1,0 +1,108 @@
+/* definições para o padding não alterar as dimensões dos divs */
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
+html {
+    background-color: whitesmoke;
+    line-height: 1.4;
+}
+
+body {
+    font-family: Helvetica;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    color: #303030;
+    border: all;
+    text-align: justify;
+}
+
+a:link, a:visited {
+    color: #303030
+}
+
+a:hover {
+    color: #0077aa
+}
+
+.slides {
+    display: none;
+}
+
+.row {
+    display: flex;
+}
+
+#Header {
+    text-align: center;
+    font-size: 60px;
+    font-family: Arial;
+    padding-top: 20px;
+    padding: 20px;
+    color: olivedrab;
+}
+
+#SideBar {
+    width: 25%;
+    height: 100%;
+    padding: 20px;
+}
+
+
+#MainBody {
+    width: 75%;
+    padding: 30px;
+}
+
+#MainBody #table1 {
+    float: right;
+    margin-left: 20px;
+    margin-right: 10px;
+    border-collapse: collapse;
+}
+
+#MainBody td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 5px;
+}
+
+#caraibas {
+    display: none;
+}
+
+.table2 {
+    width: 100%;
+}
+
+.table2 th {
+    width: 25%;
+}
+
+.button {
+    background-color: olivedrab;
+    border: none;
+    color: white;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.button:active {
+    background-color: darkolivegreen;
+}
+
+.button:hover {
+    background-color: darkolivegreen;
+}
+
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="iguanastyle.css">
+    <title>Iguana Page</title>
+</head>
+<body>
+    <div>
+        <img class="slides" src="images/iguana1.jpg" style="width: 100%">
+        <img class="slides" src="images/iguana2.jpg" style="width: 100%">
+        <img class="slides" src="images/iguana3.jpg" style="width: 100%">
+        <img class="slides" src="images/iguana4.jpg" style="width: 100%">
+        <img class="slides" src="images/iguana5.jpg" style="width: 100%">
+    </div>
+    <div id="Header">
+        <i><b>IGUANA</b></i>
+    </div>
+    <hr width="95%" >
+    <div class="row">
+        <div id="SideBar">
+            <h2 align="center">Índice</h2>
+            <hr>
+            <ul style="list-style-type:square;">
+                <li><a href="#comportamento">Comportamento</a></li>
+                <li><a href="#alimentacao">Alimentação</a></li>
+                <li><a href="#reproducao">Reprodução</a></li>
+                <li><a href="#especies">Espécies</a></li>
+            </ul>
+
+        </div>
+        <div id="MainBody">
+            <table id="table1">
+                <tr>
+                    <th colspan="2">Classificação Científica</th>
+                </tr>
+                <tr>
+                    <td>Reino:</td>
+                    <td><i>Animalia</i></td>
+                </tr>
+                <tr>
+                    <td>Filo:</td>
+                    <td><i>Chordata</i></td>
+                </tr>
+                <tr>
+                    <td>Classe:</td>
+                    <td><i>Reptilia</i></td>
+                </tr>
+                <tr>
+                    <td>Ordem:</td>
+                    <td><i>Squamata</i></td>
+                </tr>
+                <tr>
+                    <td>Subordem:</td>
+                    <td><i>Sauria</i></td>
+                </tr>
+                <tr>
+                    <td>Família:</td>
+                    <td><i>Iguanidae</i></td>
+                </tr>
+                <tr>
+                    <td>Género:</td>
+                    <td><i>Iguana</i></td>
+                </tr>
+            </table>
+            Iguana é um género de um réptil da família Iguanidae que é nativo das regiões da América do Sul, América Central e Caraíbas.
+            <p>O nome "iguana" é derivado do nome original dado pela tribo Taíno, <i>iwana</i>.</p>
+            <p>Apesar de existirem várias espécies pertencentes à família Iguanidae, apenas duas são do género Iguana:</p>
+            <ul style="list-style-type:square;">
+                <li>Iguana-verde</li>
+                <li>Iguana-das-caraíbas</li>
+            </ul>
+
+            <h2 id="comportamento">Comportamento<hr></h2>
+            <p>São animais sociáveis, podendo partir em busca de alimento em grupos, ou mesmo apanhar sol em conjunto. No entanto, são territoriais, principalmente os machos, durante a época reprodutiva. Entram em conflito pelo acesso às fêmeas, pelos melhores locais de exposição ao sol e, no caso das fêmeas, pelos melhores locais onde construir os ninhos. São arborícolas, trepando agilmente a árvores com a ajuda da cauda e dos seus dedos compridos providos de fortes garras, e diurnos. Em caso de perigo, podem defender-se desferindo fortes golpes com a cauda, embora seja mais habitual adoptarem comportamentos de fuga em direcção à água, visto serem também excelentes nadadores.</p>
+
+            <h2 id="alimentacao">Alimentação<hr></h2>
+            <p>São principalmente herbívoras. Os juvenis alimentam-se também de artrópodes e insectos, mas os adultos são herbívoros. Usam a língua para manipular o alimento, e ingerem sempre pequenas quantidades, que engolem praticamente sem mastigar. As iguanas alimentam-se melhor com temperaturas entre 25 a 35ºC; quando sujeitas a temperaturas mais baixas, demonstram uma redução de apetite. Podem também deixar de se alimentar alguns dias antes da muda de pele, e as fêmeas durante o período final de desenvolvimento dos ovos. Indivíduos que sofram de stress ou que tenham sido colocados num novo ambiente podem também não se alimentar.</p>
+
+            <h2 id="reproducao">Reprodução<hr></h2>
+            <p>Reproduzem-se no período seco do ano, pois desta forma asseguram a eclosão das crias na época das chuvas, quando o alimento está mais facilmente disponível. As fêmeas escavam um buraco de cerca de 45-100 cm de profundidade, num local com areia húmida. As posturas têm lugar cerca de 65 dias após o acasalamento, sendo depositados cerca de 10 a 30 ovos ao longo de 3 dias. O período de incubação dos ovos pode ser de 65 a 115 dias.</p>
+
+            <h2 id="especies">Espécies<hr></h2>
+            <div align="center">
+                <button id="bv" class="button" onclick="load_verde()">Iguana-verde</button>
+                <button class="button" onclick="load_caraibas()">Iguana-das-caraíbas</button>
+
+                <div id="verde">
+                    <img src="images/verde.jpg" width="100%">
+                    <table class="table2">
+                        <tr>
+                            <th>Nome:</th>
+                            <td>Iguana-verde</td>
+                        </tr>
+                        <tr>
+                            <th>Nome científico:</th>
+                            <td><i>Iguana iguana</i></td>
+                        </tr>
+                        <tr>
+                            <th>Tamanho:</th>
+                            <td>1,5-2m</td>
+                        </tr>
+                        <tr>
+                            <th>Peso:</th>
+                            <td>4-5kg</td>
+                        </tr>
+                        <tr>
+                            <th>Habitat:</th>
+                            <td>Florestas tropicais húmidas, mangais e zonas relativamente áridas, sempre na proximidade de água.</td>
+                        </tr>
+                        <tr>
+                            <th>Estado de conservação:</th>
+                            <td>Fora de perigo</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="caraibas">
+                    <img src="images/caraibas.jpg" width="100%">
+                    <table class="table2">
+                        <tr>
+                            <th>Nome:</th>
+                            <td>Iguana-das-caraíbas</td>
+                        </tr>
+                        <tr>
+                            <th>Nome científico:</th>
+                            <td><i>Iguana delicatissima</i></td>
+                        </tr>
+                        <tr>
+                            <th>Tamanho:</th>
+                            <td>1-1,2m</td>
+                        </tr>
+                        <tr>
+                            <th>Peso:</th>
+                            <td>3-4kg</td>
+                        </tr>
+                        <tr>
+                            <th>Habitat:</th>
+                            <td>Caraíbas</td>
+                        </tr>
+                        <tr>
+                            <th>Estado de conservação:</th>
+                            <td>Em perigo</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="iguanascripts.js"></script>
+</body>
+</html>
