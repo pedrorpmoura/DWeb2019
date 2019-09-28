@@ -2,10 +2,10 @@ FICHA 3 - Exercício 6
 
 a)
 v1.
-/ARQSITS/ARQELEM[contains(CONCEL, "Amares")]/IDENTI
+/ARQSITS/ARQELEM[contains(CONCEL[../TIPO/@ASSUNTO="arqueossitio"], "Amares")]/IDENTI
 
 v2.
-/IDENTI[..[contains(CONCEL, "Amares")]]
+/IDENTI[..[contains(CONCEL[../TIPO/@ASSUNTO="arqueossitio"], "Amares")]]
 
 
 b)
@@ -19,4 +19,4 @@ distinct-values(//ARQELEM/normalize-space(CONCEL[../TIPO/@ASSUNTO="arqueossitio"
 
 c)
 v1.
-//ARQELEM[contains(CONCEL,"Montalegre")]/DESCRI
+//ARQELEM[contains(CONCEL[../TIPO/@ASSUNTO="arqueossitio"],"Montalegre")]/DESCRI
