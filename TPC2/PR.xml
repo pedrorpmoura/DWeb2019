@@ -13,6 +13,7 @@
             <name>Pedro Moura</name>
             <number>PG41094</number>
             <email>pg41094@alunos.uminho.pt</email>
+            <git link="https://github.com/pedrorpmoura/DWeb2019">GitHub</git>
         </element>
     </workteam>
     <abstract>
@@ -20,6 +21,17 @@
         <ref link="kblabafiefohwdjwi">Página da Disciplina</ref>
     </abstract>
     <deliverables>
-        <deliverable link=""></deliverable>
+        <deliverable link="http://www4.di.uminho.pt/~jcr/XML/CURSOS/PED2008/fichas/ficha3/">
+            Ficha 3
+        </deliverable>
+        <deliverable link="/FICHA3/arq.xml">
+            Arqueossítios do Nordeste Português
+        </deliverable>
+        <deliverable link="">
+            Exercício 6
+        </deliverable>
+        <deliverable link="">
+            Exercício 7
+        </deliverable>
     </deliverables>
 </pr>
