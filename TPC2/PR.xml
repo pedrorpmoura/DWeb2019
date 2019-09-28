@@ -4,8 +4,8 @@
     <header>
         <keyname>TPC_2</keyname>
         <title>Resolução do TPC 2 da UC de Desencolvimento de Aplicações Web</title>
-        <begin-date>28-09-2019</begin-date>
-        <end-date>29-09-2019</end-date>
+        <begin-date>Setembro 2019</begin-date>
+        <end-date>Setembro 2019</end-date>
         <supervisor link="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
     </header>
     <workteam>
@@ -17,8 +17,11 @@
         </element>
     </workteam>
     <abstract>
-        Isto é a resolução do <bold>TPC 2</bold> da disciplina de <italic>DWEB2019</italic>.
-        <ref link="kblabafiefohwdjwi">Página da Disciplina</ref>
+        Foi nos pedido que formalizássemos o pacote SIP (<italic>Submission Information Protocol</italic>).
+        Para isto, o professor pediu um ficheiro DTD de uma estrutura de uma página web, e depois de construído 
+        este ficheiro, gerar um ficheiro XML com esta estrutura, e preenchê-lo com o conteúdo do <bold>TPC</bold>.
+        
+        Além disto, foi também pedido que fizéssemos os exercícios 6 e 7 da ficha 3.
     </abstract>
     <deliverables>
         <deliverable link="http://www4.di.uminho.pt/~jcr/XML/CURSOS/PED2008/fichas/ficha3/">
@@ -27,11 +30,13 @@
         <deliverable link="/FICHA3/arq.xml">
             Arqueossítios do Nordeste Português
         </deliverable>
-        <deliverable link="">
+        <deliverable link="/FICHA3/ex6.txt">
             Exercício 6
         </deliverable>
-        <deliverable link="">
+        <deliverable link="FICHA3/ex7.dtd">
             Exercício 7
         </deliverable>
     </deliverables>
+    
+    <date>28-09-2019</date>
 </pr>

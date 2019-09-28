@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- PR -->
-<!ELEMENT pr (header, workteam, abstract, deliverables) >
+<!ELEMENT pr (header, workteam, abstract, deliverables, date) >
 
 
 <!-- Header -->
@@ -45,4 +45,8 @@
 
 <!ATTLIST deliverable
             link CDATA #REQUIRED >
+            
+            
+<!-- Date -->
+<!ELEMENT date (#PCDATA) >
 
