@@ -13,7 +13,8 @@ v1. (com repetidos)
 //ARQELEM/CONCEL[../TIPO/@ASSUNTO="arqueossitio"]
 
 v2. (sem repetidos)
-distinct-values(//ARQELEM/CONCEL[../TIPO/@ASSUNTO="arqueossitio"])
+(a função distinct-values remove os elementos únicos, e a função normalize-space remove leading e trailing spaces)
+distinct-values(//ARQELEM/normalize-space(CONCEL[../TIPO/@ASSUNTO="arqueossitio"]))
 
 
 c)
