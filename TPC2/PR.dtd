@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- PR -->
+<!ELEMENT pr (header, workteam, abstract, deliverables) >
+
+
+<!-- Header -->
+<!ELEMENT header (keyname, title, subtitle?, begin-date, end-date, supervisor) >
+<!ELEMENT keyname (#PCDATA) >
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT subtitle (#PCDATA) >
+<!ELEMENT begin-date (#PCDATA) >
+<!ELEMENT end-date (#PCDATA) >
+<!ELEMENT supervisor (#PCDATA) >
+
+<!ATTLIST supervisor
+            link CDATA #FIXED "http://www4.di.uminho.pt/~jcr/" >
+
+
+<!-- Workteam -->
+<!ELEMENT workteam (element+) >
+<!ELEMENT element (name, number, email, git?) >
+<!ELEMENT name (#PCDATA) >
+<!ELEMENT number (#PCDATA) >
+<!ELEMENT email (#PCDATA) >
+<!ELEMENT git (#PCDATA) >
+
+<!ATTLIST git 
+            link CDATA #REQUIRED >
+
+
+<!-- Abstract -->
+<!ELEMENT abstract (#PCDATA|bold|italic|ref)* >
+<!ELEMENT bold (#PCDATA) >
+<!ELEMENT italic (#PCDATA) >
+<!ELEMENT ref (#PCDATA) >
+
+<!ATTLIST ref
+            link CDATA #REQUIRED >
+
+
+<!-- Deliverables -->
+<!ELEMENT deliverables (deliverable*) >
+<!ELEMENT deliverable (#PCDATA) >
+
+<!ATTLIST deliverable
+            link CDATA #REQUIRED >
+

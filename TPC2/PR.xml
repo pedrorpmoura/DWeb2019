@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "PR.dtd">
+<pr>
+    <header>
+        <keyname>TPC_2</keyname>
+        <title>Resolução do TPC 2 da UC de Desencolvimento de Aplicações Web</title>
+        <begin-date>28-09-2019</begin-date>
+        <end-date>29-09-2019</end-date>
+        <supervisor link="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </header>
+    <workteam>
+        <element>
+            <name>Pedro Moura</name>
+            <number>PG41094</number>
+            <email>pg41094@alunos.uminho.pt</email>
+        </element>
+    </workteam>
+    <abstract>
+        Isto é a resolução do <bold>TPC 2</bold> da disciplina de <italic>DWEB2019</italic>.
+        <ref link="kblabafiefohwdjwi">Página da Disciplina</ref>
+    </abstract>
+    <deliverables>
+        <deliverable link=""></deliverable>
+    </deliverables>
+</pr>
