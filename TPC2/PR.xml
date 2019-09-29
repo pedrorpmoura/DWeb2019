@@ -18,7 +18,8 @@
     </workteam>
     <abstract>
         Foi nos pedido que formalizássemos o pacote SIP (<italic>Submission Information Protocol</italic>).
-        Para isto, o professor pediu um ficheiro DTD de uma estrutura de uma página web, e depois de construído 
+        Para isto, o professor pediu um ficheiro DTD de uma estrutura de uma 
+        <ref link="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/PR.htm">página web</ref>, e depois de construído 
         este ficheiro, gerar um ficheiro XML com esta estrutura, e preenchê-lo com o conteúdo do <bold>TPC</bold>.
         
         Além disto, foi também pedido que fizéssemos os exercícios 6 e 7 da ficha 3.
