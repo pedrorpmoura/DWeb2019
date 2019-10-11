@@ -6,17 +6,9 @@
     <xsl:output method="html" indent="yes" encoding="UTF-8"/>
     
     <xsl:template match="ARQELEM">
-        <html>
-            <head>
-                
-            </head>
-            
-            <body>
-                <h1><xsl:value-of select="IDENTI"/></h1>
-                <h2>Arqueossítio do concelho de <xsl:value-of select="CONCEL"/></h2>
-                <p><xsl:apply-templates/></p>
-            </body>
-        </html>
+        <h1><xsl:value-of select="IDENTI"/></h1>
+        <h2>Arqueossítio do concelho de <xsl:value-of select="CONCEL"/></h2>
+        <p><xsl:apply-templates/></p>
     </xsl:template>
     
 </xsl:stylesheet>
