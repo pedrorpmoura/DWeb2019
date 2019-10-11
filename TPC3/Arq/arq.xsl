@@ -69,7 +69,7 @@
     
     <xsl:template match="IDENTI" mode="contents-table">
         <tr>
-            <td><b>IDENTIFICADOR</b></td>
+            <td><b>IDENTI</b></td>
             <td><xsl:value-of select="current()"/></td>
         </tr>
     </xsl:template>
@@ -83,7 +83,7 @@
     
     <xsl:template match="DESCRI" mode="contents-table">
         <tr>
-            <td><b>DESCRIÇÃO</b></td>
+            <td><b>DESCRI</b></td>
             <td><xsl:apply-templates/></td>
         </tr>
     </xsl:template>
