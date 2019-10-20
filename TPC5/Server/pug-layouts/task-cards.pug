@@ -1,0 +1,31 @@
+each task, index in tasks
+    if task.is_done
+        .w3-container.w3-third
+            .w3-card-2(align='center').w3-pale-green.w3-padding-24.w3-margin-bottom
+                h3= task.name
+                hr
+                p Até 
+                    b= task.limit_date
+                form(
+                    action="/uncheck" + index
+                    onsubmit="setTimeout(function(){location.reload(true);},10)"
+                    method="POST")
+                    input.w3-btn.w3-green.w3-border.w3-border-black(
+                        type="submit" 
+                        value="Completada!"
+                        align="center")
+    else
+        .w3-container.w3-third
+            .w3-card-2(align='center').w3-padding-24.w3-margin-bottom
+                h3= task.name
+                hr
+                p Até 
+                    b= task.limit_date
+                form(
+                    action="/check" + index
+                    onsubmit="setTimeout(function(){location.reload(true);},10)"
+                    method="POST")
+                    input.w3-btn.w3-border.w3-border-blue-gray(
+                        type="submit" 
+                        value="Não completada!"
+                        align="center")

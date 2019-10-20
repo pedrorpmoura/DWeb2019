@@ -1,0 +1,19 @@
+.w3-container.w3-border
+    h3(align="center") Adicionar Tarefa
+    hr
+    // timeout so the browser has time to submit the form and then reload
+    // the page
+    form(action='/addTask' 
+            onsubmit='setTimeout(function(){location.reload(true);},10)'
+            method='POST')
+        label
+            b Tarefa
+        input.w3-input.w3-border.w3-light-grey(type='text' name='name')
+        br
+        label
+            b Data limite
+        input.w3-input.w3-border.w3-light-grey(type='date' name='limit_date')
+        br
+        .w3-container(align='center')
+            input.w3-btn.w3-blue-grey(type='submit' value='Adicionar' align='center')
+        br

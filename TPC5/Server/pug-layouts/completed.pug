@@ -1,0 +1,18 @@
+extends layout
+block content
+    .w3-container
+        header.w3-container(align='center')
+            h1 LISTA DE TAREFAS
+            hr
+
+        .w3-container.w3-rest
+            .w3-container.w3-quarter.w3-margin-bottom
+
+            .w3-container(align='center').w3-half.w3-margin-bottom
+                a(href='/').w3-button.w3-block.w3-border.w3-border-blue-gray.w3-third Todas
+                a(href='/completed').w3-button.w3-block.w3-border.w3-border-blue-gray.w3-blue-gray.w3-third Completadas
+                a(href='/uncompleted').w3-button.w3-block.w3-border.w3-border-blue-gray.w3-third Por Completar
+
+            .w3-container.w3-quarter.w3-margin-bottom
+            
+            include task-cards-simple
