@@ -55,7 +55,7 @@
     
     <xsl:template match="ARQELEM" mode="index">
         <li>
-            <a href="/{count(preceding-sibling::*)+1}"><xsl:value-of select="IDENTI"/></a>
+            <a id="{count(preceding-sibling::*)+1}" href="/{count(preceding-sibling::*)+1}"><xsl:value-of select="IDENTI"/></a>
         </li>
     </xsl:template>
     

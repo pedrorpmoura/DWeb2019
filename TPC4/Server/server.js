@@ -12,7 +12,7 @@ var server = http.createServer(function (request, response) {
         case "/":
             fs_mod.loadFile(response, 'Arq/index.html', 'text/html')
             break
-
+        
         case "/favicon.ico":
             break
 
