@@ -1,0 +1,40 @@
+.w3-ul.w3-card.w3-large
+        for doc, index in docs
+            li.w3-bar
+                div.w3-bar-item
+                    a(href="/song-" + index)
+                        b.w3-large= doc['tit']
+                    br
+                    span.w3-medium= doc['musico']
+                
+                button.w3-button.w3-bar-item.w3-right(
+                    onclick="document.getElementById('delete-modal').style.display='block'"
+                )
+                    span.w3-large &times;
+
+            div(id='delete-modal').w3-modal
+                .w3-modal-content.w3-animate-top.w3-card-4
+                    .w3-container
+                        p Deseja apagar esta música?
+                        .w3-container
+                            form(
+                                action="/delete-" + index, 
+                                method="post",
+                            ).w3-quarter
+                                input.w3-btn.w3-blue-gray(
+                                    type="submit"
+                                    value="Sim, quero apagar."
+                                )
+                            .w3-btn.w3-quarter.w3-blue-gray(
+                                onclick="document.getElementById('delete-modal').style.display='none'"
+                            ) Cancelar
+                    br
+                //form(
+                //    action="/delete-" + index, 
+                //    method="post",
+                //).w3-bar-item.w3-right
+                //    input(
+                //        type="image"
+                //        src="images/delete-symbol.png"
+                //        alt="Submit"
+                //    ).w3-right.w3-small

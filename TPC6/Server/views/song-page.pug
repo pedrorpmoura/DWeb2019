@@ -1,0 +1,42 @@
+extends layout
+block content
+    // o pug ignora os elementos nao existentes
+    br
+    table.w3-table.w3-striped.w3-bordered.w3-border
+        tr
+            td 
+                b Província
+            td= song.prov
+        tr
+            td 
+                b Local
+            td= song.local
+        tr
+            td 
+                b Título
+            td= song.tit
+        tr
+            td 
+                b Músico
+            td= song.musico
+        tr
+            td 
+                b Instrumentos
+            td= song.inst
+        tr
+            td 
+                b Observações
+            td= song.obs
+        tr
+            td 
+                b Ficheiro
+            td= song.file['#text']
+        tr
+            td 
+                b Duração
+            td= song.duracao
+
+    hr
+    .w3-container(align='center')
+        a(href='/').w3-btn.w3-blue-gray Voltar à página inicial
+        

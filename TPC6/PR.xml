@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../pr.dtd">
+<pr>
+    <metadata>
+        <keyname>DWEB2019_TPC_6</keyname>
+        <title>Resolução do TPC 6 da UC de Desencolvimento de Aplicações Web</title>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>Outubro 2019</bdate>
+        <edate>Outubro 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A82258</identifier>
+            <name>Pedro Moura</name>
+            <email>pedrorpmoura@gmail.com</email>
+            <git>https://github.com/pedrorpmoura/DWeb2019</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>Criação de uma app em nodejs, utilizando a biblioteca express, que permite visualizar um arquivo de músicas.</p>
+        
+    </abstract>
+    <deliverables>
+        <deliverable path="Server/">Pasta com o servidor</deliverable>
+    </deliverables>
+</pr>

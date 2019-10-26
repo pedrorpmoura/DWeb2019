@@ -1,0 +1,36 @@
+form(action="/add-song", method="post")
+    br
+    label Província
+    input.w3-input.w3-border(type="text" name="prov")
+    br
+    label Local
+    input.w3-input.w3-border(type="text" name="local")
+    br
+    label Título
+    input.w3-input.w3-border(type="text" name="tit" required="required")
+    br
+    label Músico
+    input.w3-input.w3-border(type="text" name="musico" required="required")
+    br
+    label Instrumentos
+    input.w3-input.w3-border(type="text" name="inst")
+    br
+    label Observações
+    input.w3-input.w3-border(type="text" name="obs")
+    br
+    label Ficheiro
+    .w3-container.w3-border
+        .w3-container.w3-third.w3-left
+            label Tipo
+            input.w3-input.w3-border(type="text" name="file_type" required)
+        .w3-container.w3-rest
+            label Nome
+            input.w3-input.w3-border(type="text" name="file_name" required)
+        br
+    br
+    label Duração
+    input.w3-input.w3-border(type="text" name="duracao" required)
+    br
+    input.w3-btn.w3-blue-gray(type="submit" value="Adicionar")
+    br
+    br
