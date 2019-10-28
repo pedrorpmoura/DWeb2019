@@ -87,7 +87,7 @@ router.post('/add-song', function (req, res) {
 })
 
 /* DELETE song */
-router.post('/delete-:id(\\d+)/', function (req, res) {
+router.post('/delete-:id', function (req, res) {
 
     var id = req.params.id
     // check if id is a number
@@ -118,5 +118,45 @@ router.post('/delete-:id(\\d+)/', function (req, res) {
     }
 })
 
+
+/* UPDATE SONG */
+router.post("/update-:id", function (req, res) {
+    
+    var id = req.params.id
+
+    var obj = req.body
+    var key = Object.keys(obj)[0]
+    var value = obj[key]
+
+    if (isNaN(id)) {
+        res.render('error', { e: 'Erro no request POST'})
+
+    } else {
+        jsonfile.readFile(songsDB, (error, data) => {
+            if (error) {
+                //console.log(error)
+                res.render('error', { e: 'Erro na leitura da base de dados.'})
+    
+            } else {
+                if (key == 'file') {
+                    data.arq.doc[id][key]['#text'] = value
+                }
+                else {
+                    data.arq.doc[id][key] = value
+                }
+                
+                jsonfile.writeFile(songsDB, data, error => {
+                    if (error) {
+                        console.log(error)
+                    } else {
+                        console.log("Música atualizada com sucesso!")
+                    }
+                })
+            }
+
+            res.redirect('/')
+        })   
+    }
+})
 
 module.exports = router;

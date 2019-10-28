@@ -11,6 +11,10 @@
                     onclick="document.getElementById('delete-modal').style.display='block'"
                 )
                     span.w3-large &times;
+                
+                button.w3-btn.w3-bar-item.w3-right.w3-blue-gray(
+                    onclick="document.getElementById('edit-modal').style.display='block'"
+                ) Editar
 
             div(id='delete-modal').w3-modal
                 .w3-modal-content.w3-animate-top.w3-card-4
@@ -29,12 +33,44 @@
                                 onclick="document.getElementById('delete-modal').style.display='none'"
                             ) Cancelar
                     br
-                //form(
-                //    action="/delete-" + index, 
-                //    method="post",
-                //).w3-bar-item.w3-right
-                //    input(
-                //        type="image"
-                //        src="images/delete-symbol.png"
-                //        alt="Submit"
-                //    ).w3-right.w3-small
+
+            div(id='edit-modal').w3-modal
+                .w3-modal-content.w3-animate-top.w3-card-4
+                    .w3-container
+                        p O que quer editar?
+                        .w3-container
+                            button.w3-quarter.w3-button.w3-border.w3-border-blue-gray(
+                                onclick="document.getElementById('prov-modal').style.display='block'"
+                            ) Província
+                            button.w3-quarter.w3-button.w3-border.w3-border-blue-gray(
+                                onclick="document.getElementById('local-modal').style.display='block'"
+                            ) Local
+                            button.w3-quarter.w3-button.w3-border.w3-border-blue-gray(
+                                onclick="document.getElementById('tit-modal').style.display='block'"
+                            ) Título
+                            button.w3-quarter.w3-button.w3-border.w3-border-blue-gray(
+                                onclick="document.getElementById('musico-modal').style.display='block'"
+                            ) Músico
+                            button.w3-quarter.w3-button.w3-border.w3-border-blue-gray(
+                                onclick="document.getElementById('inst-modal').style.display='block'"
+                            ) Instrumento
+                            button.w3-quarter.w3-button.w3-border.w3-border-blue-gray(
+                                onclick="document.getElementById('obs-modal').style.display='block'"
+                            ) Observações
+                            button.w3-quarter.w3-button.w3-border.w3-border-blue-gray(
+                                onclick="document.getElementById('file-modal').style.display='block'"
+                            ) Ficheiro
+                            button.w3-quarter.w3-button.w3-border.w3-border-blue-gray(
+                                onclick="document.getElementById('duracao-modal').style.display='block'"
+                            ) Duração
+                            br
+                            br
+                            br
+                            br
+                            .w3-btn.w3-quarter.w3-blue-gray(
+                                onclick="document.getElementById('edit-modal').style.display='none'"
+                            ) Cancelar
+                    br
+
+            include key-modals
+                        

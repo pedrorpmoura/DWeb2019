@@ -22,11 +22,21 @@ block content
         tr
             td 
                 b Instrumentos
-            td= song.inst
+            if song.inst !== undefined
+                td= song.inst
+            else
+                td Não especificado
+            
         tr
             td 
                 b Observações
-            td= song.obs
+            if song.obs !== undefined
+                if !song.obs['#text']
+                    td= song.obs
+                else
+                    td= song.obs['#text']
+            else
+                td Não especificado
         tr
             td 
                 b Ficheiro
