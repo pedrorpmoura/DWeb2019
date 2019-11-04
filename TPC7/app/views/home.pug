@@ -1,0 +1,24 @@
+extends layout
+block content
+    .w3-card
+        h1(align='center') Insira um ano (1900-2018)
+        hr
+        .w3-container
+            form(action="/movies/year/", method="get")
+                input.w3-input.w3-border.w3-light-grey(
+                    name='year'
+                    type='number'
+                )
+                br
+                .w3-container(align='center')
+                    button.w3-button.w3-blue-grey(
+                        type='submit'
+                    ) Ok
+        br
+    hr
+    .w3-container(align='center')
+        form(action="/add-movie", method="get")
+            input.w3-button.w3-blue-grey(
+                type='submit'
+                value='Adicionar filme'
+            )

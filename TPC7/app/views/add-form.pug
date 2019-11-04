@@ -1,0 +1,19 @@
+extends layout
+block content
+    form(action="/movies", method="post").w3-container.w3-card
+        br
+        label Title
+        input.w3-input.w3-border(type="text" name="title")
+        br
+        label Year
+        input.w3-input.w3-border(type="text" name="year")
+        br
+        label Cast
+        input.w3-input.w3-border(type="text" name="cast")
+        br
+        label Genres
+        input.w3-input.w3-border(type="text" name="genres")
+        br
+        input.w3-btn.w3-blue-gray(type="submit" value="Add")
+        br
+        br

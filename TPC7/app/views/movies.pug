@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    .w3-container(align='center')
+        h1 MOVIES
+    ul.w3-ul.w3-border.w3-card
+        for movie in movies
+            li.w3-bar
+                div.w3-bar-item
+                    a(href="/movies/" + movie._id)= movie.title
+                
+                button.w3-button.w3-bar-item.w3-right(onclick='apagaItem("' + movie._id + '")') 
+                    span.w3-large &times;
+                
+                button.w3-btn.w3-bar-item.w3-right.w3-blue-gray(onclick='editaItem("' + movie._id + '")') Editar
