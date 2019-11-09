@@ -1,0 +1,13 @@
+extends layout
+block content
+    table.table.table-dark.table-bordered.table-striped
+        thead
+            tr
+                th Category
+                th Year
+        tbody
+            for prize in prizes
+                tr
+                    td= prize.category
+                    td= prize.year
+        
