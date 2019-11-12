@@ -1,0 +1,69 @@
+extends layout
+
+block content
+    h1(align='center') Entidade
+    div.card
+        table.table.table-striped.table-bordered
+            thead.thead-dark
+                tr
+                    th Estado
+                    th Sigla
+                    if entidade.sioe
+                        th SIOE
+                    th Designação
+                    th Internacional
+            tbody
+                tr
+                    td= entidade.estado
+                    td= entidade.sigla
+                    if entidade.sioe
+                        td= entidade.sioe
+                    td= entidade.designacao
+                    if entidade.internacional
+                        td= entidade.internacional
+                    else
+                        td Não
+
+    h1(align='center') Tipologias
+    div.card
+        table.table.table-striped.table-bordered
+            thead.thead-dark
+                tr
+                    th Sigla
+                    th Designação
+            tbody
+                for tipologia in tipologias
+                    tr
+                        td= tipologia.sigla
+                        td= tipologia.designacao
+
+    h1(align='center') Processos que é dono
+    div.card
+        table.table.table-striped.table-bordered
+            thead.thead-dark
+                tr
+                    th Código
+                    th Título
+            tbody
+                for processo in processosDono
+                    tr
+                        td= processo.codigo
+                        td= processo.titulo
+
+    h1(align='center') Processos que é participante
+    div.card
+        table.table.table-striped.table-bordered
+            thead.thead-dark
+                tr
+                    th Código
+                    th Título
+            tbody
+                for processo in processosParticipa
+                    tr
+                        td= processo.codigo
+                        td= processo.titulo
+
+    div(align='center')
+        a(href='/entidades')
+            button.btn-block.btn-dark 
+                h2 Voltar
