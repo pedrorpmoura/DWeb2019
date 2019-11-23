@@ -17,8 +17,7 @@
         </worker>
     </workteam>
     <abstract>
-        <p>Resolução do Ex. 1 de uma ficha dada pelo Professor.</p>
-        <p>Criação de um servidor nodejs, utilizando as ferramentas já utilizadas nos trabalhos anteriores, que dê suporte a uma API de dados.</p>
+        <p>Criação de uma web app que permite a realização de upload e download de ficheiros.</p>
         
     </abstract>
     <deliverables>
