@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  div(align='center')
+    h1 Entidades
+
+  
+  div.card
+    table.table.table-striped.table-bordered
+      thead.thead-dark
+        tr
+          th Sigla
+          th Designação
+          th Ver
+      tbody
+        for entidade in entidades
+          tr
+            td= entidade.sigla
+            td= entidade.designacao
+            td
+              a(href='/entidades/' + entidade.id)
+                button(type='button').btn.btn-info Info
