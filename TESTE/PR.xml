@@ -2,7 +2,7 @@
 <!DOCTYPE pr SYSTEM "../pr.dtd">
 <pr>
     <metadata>
-        <keyname>DWEB2019_TPC_8</keyname>
+        <keyname>DWEB2019_TESTE</keyname>
         <title>Resolução do Teste de Avaliação da UC de Desencolvimento de Aplicações Web</title>
         <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
         <bdate>Janeiro 2019</bdate>
